@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.1" pages="2">
+  <diagram name="Methode 1 – Rechtoe Rechtaan" id="PfpLtxGX5aRNeD2iJG5W">
+    <mxGraphModel dx="1959" dy="891" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="rr_outer" parent="1" style="swimlane;html=1;horizontal=0;startSize=30;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontStyle=1;fontSize=13;" value="Methode 1 – Rechtoe Rechtaan (BAG Bouw gestart 2025)" vertex="1">
+          <mxGeometry height="850" width="1750" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_cross_b3p1" edge="1" parent="rr_outer" source="rr_b3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" target="rr_p1" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="570" />
+              <mxPoint x="170" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rr_bag" parent="rr_outer" style="swimlane;html=1;startSize=30;horizontal=0;fontSize=11;fontStyle=1;fillColor=#e8f4fd;strokeColor=#6c8ebf;" value="BAG Databron" vertex="1">
+          <mxGeometry height="200" width="1720" x="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_b1" parent="rr_bag" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;fontStyle=0;" value="⬇  Download BAG XML lvbag-extract-nl.zip ~3.3 GB gecomprimeerd" vertex="1">
+          <mxGeometry height="80" width="150" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_b2" parent="rr_bag" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;fontStyle=0;" value="⬇  Download BAG Geopackage bag-light.gpkg Actuele stand" vertex="1">
+          <mxGeometry height="75" width="150" x="40" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_b3" parent="rr_bag" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" value="BAG XML lokaal ~50 GB uitgepakt (Panden- + VBO-bestanden)" vertex="1">
+          <mxGeometry height="90" width="130" x="400" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_b4" parent="rr_bag" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" value="bag-light.gpkg lokaal opgeslagen" vertex="1">
+          <mxGeometry height="72" width="130" x="220" y="112" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_e_b1b3" edge="1" parent="rr_bag" source="rr_b1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" target="rr_b3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_e_b2b4" edge="1" parent="rr_bag" source="rr_b2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" target="rr_b4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UL0XINoAXqkhyYeTcimC-1" parent="rr_bag" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Thomas van Offeren&lt;div&gt;gemeente Haarlemmermeer&lt;/div&gt;&lt;div&gt;maart 2026&lt;/div&gt;&lt;div&gt;(met hulp van Claude AI)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="170" x="1530" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="LMX5DbepPwT_fBcXepHj-6" parent="rr_bag" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Methode 1: Rechtoe Rechtaan&lt;/h1&gt;&lt;p&gt;Dit stroomschema berekent het aantal verblijfsobjecten met woonfunctie waarvan de bouw&amp;nbsp; gestart is in 2025 (of ander jaartal). Dit is de meest eenvoudige analyse, vandaar: rechtoe rechtaan.&lt;/p&gt;" vertex="1">
+          <mxGeometry height="120" width="500" x="920" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_qgis" parent="rr_outer" style="swimlane;html=1;startSize=30;horizontal=0;fontSize=11;fontStyle=1;fillColor=#f0f9f0;strokeColor=#82b366;" value="QGIS Visuele analyse" vertex="1">
+          <mxGeometry height="420" width="1720" x="30" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_q0" parent="rr_qgis" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;fontStyle=0;" value="PDOK-plugin: Bestuurlijke grenzen (gemeentevlak)" vertex="1">
+          <mxGeometry height="80" width="140" x="55" y="5" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_q1" parent="rr_qgis" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#ffffff;strokeColor=#3a6fa0;fontSize=10;align=left;spacingLeft=6;" value="Stap 1 – Laad bag-light.gpkg Lagen aanwezig: verblijfsobjecten (VBO)&amp;nbsp;" vertex="1">
+          <mxGeometry height="90" width="170" x="40" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_q2" parent="rr_qgis" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#ffffff;strokeColor=#3a6fa0;fontSize=10;align=left;spacingLeft=6;" value="Stap 2 – Selecteer VBO binnen gemeentegrens Vector → Selectie op locatie. Selecteer uit: VBO. Operator: Overlappen.&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Opslaan (alleen geselecteerde objecten opslaan): GEMEENTE_VBO.shp [Aantal: ]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Filter: &quot;gebruiksdo&quot; LIKE &#39;woonfunctie&#39; [AANTAL: ]&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="210" x="250" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_q3" parent="rr_qgis" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#ffffff;strokeColor=#3a6fa0;fontSize=10;align=left;spacingLeft=6;" value="Stap 3 – Voeg Panden_BG_2025 [&#39;aantal&#39;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;]&amp;nbsp; attributen toe aan VBO.&lt;/span&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1 pand bevat meerdere VBO&#39;s. Dus belangrijk om de VBO&#39;s als bron te nemen voor de Aantallen &#39;Bouw gestat&#39;.&lt;br&gt;&lt;br&gt;Gereedschap:&amp;nbsp;&lt;/div&gt;&lt;div&gt;Attributen koppelen op veldwaarde.&lt;/div&gt;&lt;div&gt;VBO: pand_ident == Panden: identifica&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Velden kopieeren: identifica, status, voorkomenI.&lt;/div&gt;&lt;div&gt;voorvoegsel: PND_&lt;/div&gt;&lt;div&gt;X : Records negeren die niet konden worden verbonden.&lt;/div&gt;&lt;div&gt;opslaan als:&amp;nbsp; &amp;nbsp;GEMEENTE_VBO_pandenBG2025.shp&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="220" width="230" x="500" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_q4" parent="rr_qgis" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#ffffff;strokeColor=#3a6fa0;fontSize=10;align=left;spacingLeft=6;" value="Stap 4 –Resultaat: &#39;aantal&#39;-VBO aan &#39;aantal&#39;-panden met Bouw gestart in 2025.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="220" width="210" x="770" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_q5" parent="rr_qgis" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;fontStyle=0;align=center;" value="voorkomen- Identificatie = 2?" vertex="1">
+          <mxGeometry height="110" width="120" x="1030" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_q6a" parent="rr_qgis" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#ffffff;strokeColor=#3a6fa0;fontSize=10;align=left;spacingLeft=6;" value="Standaard geval (pand éénmalig bijgewerkt van Bouwvergunning → Bouw gestart). VBO opnemen [aantal: ]." vertex="1">
+          <mxGeometry height="100" width="160" x="1200" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1-PWimUSapnKKDK9stBq-4" edge="1" parent="rr_qgis" source="rr_q5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="EU1QH4aLxlhtoEJ4A5pZ-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_q6b" parent="rr_qgis" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=6;" value="⚠  voorkomenId ≠ 2 Mogelijke&amp;nbsp; administratieve correctie. → Verifieer via beeldmateriaal&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;problem: voorkomenI &lt;span style=&quot;text-wrap-mode: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;= 3&lt;/span&gt;. Een geometriewijziging bij de status &#39;Bouwvergunning verleend&#39;.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="150" x="1015" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_q7" parent="rr_qgis" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#ffffff;strokeColor=#3a6fa0;fontSize=10;align=left;spacingLeft=6;" value="Stap 5 – Opslaan als shapefile Laag → Exporteren → Opslaan als... Bestandsnaam: GEMEENTE_RR_VBO_BG2025.shp" vertex="1">
+          <mxGeometry height="110" width="200" x="1495" y="5" as="geometry" />
+        </mxCell>
+        <mxCell id="FDglc82iyTKy8YDY_HCR-1" edge="1" parent="rr_qgis" source="rr_q8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="rr_end" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_q8" parent="rr_qgis" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;align=left;spacingLeft=4;" value="&lt;div&gt;opslaan als:&lt;/div&gt;DEFINITIEF_GEMEENTE_RR_VBO_BG2025.shp GEMEENTE: &#39;aantal&#39; VBO in &#39;aantal&#39;-panden,&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="250" x="1470" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_qnote" parent="rr_qgis" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=6;" value="⚠  Valkuil: dubbele Pand-ID&#39;s Bij geometriewijziging staat hetzelfde pand tweemaal in de dataset. Een VBO telt dan dubbel bij een COUNT per pand. Herkenbaar aan voorkomenId &gt; 1. Oplossing: filter op hoogste voorkomenId." vertex="1">
+          <mxGeometry height="120" width="230" x="570" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_eq0q1" edge="1" parent="rr_qgis" source="rr_q0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" target="rr_q1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_eq1q2" edge="1" parent="rr_qgis" source="rr_q1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" target="rr_q2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_eq2q3" edge="1" parent="rr_qgis" source="rr_q2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" target="rr_q3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_eq3q4" edge="1" parent="rr_qgis" source="rr_q3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" target="rr_q4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_eq4q5" edge="1" parent="rr_qgis" source="rr_q4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" target="rr_q5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_eq5q6a" edge="1" parent="rr_qgis" source="rr_q5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" target="rr_q6a" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_lq5ja" connectable="0" parent="rr_eq5q6a" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="JA (= 2)" vertex="1">
+          <mxGeometry relative="1" x="-0.3" y="-5" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rr_eq5q6b" edge="1" parent="rr_qgis" source="rr_q5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;dashed=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;endArrow=open;endFill=0;" target="rr_q6b" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_lq5nee" connectable="0" parent="rr_eq5q6b" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="NEE (≠ 2)" vertex="1">
+          <mxGeometry relative="1" x="-0.3" y="5" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rr_eq6aq7" edge="1" parent="rr_qgis" source="rr_q6a" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" target="rr_q7" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1400" y="60" />
+              <mxPoint x="1400" y="60" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rr_eq7q8" edge="1" parent="rr_qgis" source="rr_q7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" target="rr_q8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_end" parent="rr_qgis" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;align=center;" value="Totaal aantal VBO Rechtoe Rechtaan bouwstart 2025: &#39;aantal&#39;" vertex="1">
+          <mxGeometry height="80" width="160" x="1515" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="WSTfaGg7oiEyzAoUtDYP-1" edge="1" parent="rr_qgis" source="rr_q3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;endArrow=none;endFill=0;" target="rr_qnote">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EU1QH4aLxlhtoEJ4A5pZ-6" edge="1" parent="rr_qgis" source="EU1QH4aLxlhtoEJ4A5pZ-3" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" target="EU1QH4aLxlhtoEJ4A5pZ-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EU1QH4aLxlhtoEJ4A5pZ-3" parent="rr_qgis" style="rounded=1;whiteSpace=wrap;html=1;" value="aanvullend onderzoek." vertex="1">
+          <mxGeometry height="60" width="120" x="1190" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="FDglc82iyTKy8YDY_HCR-3" edge="1" parent="rr_qgis" source="EU1QH4aLxlhtoEJ4A5pZ-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=-0.005;entryY=0.673;entryDx=0;entryDy=0;entryPerimeter=0;" target="rr_q7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1400" y="79" />
+            </Array>
+            <mxPoint x="1400" y="150" as="sourcePoint" />
+            <mxPoint x="1495" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EU1QH4aLxlhtoEJ4A5pZ-8" parent="rr_qgis" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;fontStyle=0;align=center;" value="relevant voor Realisatiestimulans?" vertex="1">
+          <mxGeometry height="110" width="120" x="1340" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="EU1QH4aLxlhtoEJ4A5pZ-9" edge="1" parent="rr_qgis" source="EU1QH4aLxlhtoEJ4A5pZ-8" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;" target="EU1QH4aLxlhtoEJ4A5pZ-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EU1QH4aLxlhtoEJ4A5pZ-12" parent="rr_qgis" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="verwijderen&amp;nbsp;&lt;div&gt;(nvt)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1300" y="335" as="geometry" />
+        </mxCell>
+        <mxCell id="EU1QH4aLxlhtoEJ4A5pZ-13" edge="1" parent="rr_qgis" source="EU1QH4aLxlhtoEJ4A5pZ-8" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.842;entryY=-0.05;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" target="EU1QH4aLxlhtoEJ4A5pZ-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EU1QH4aLxlhtoEJ4A5pZ-14" connectable="0" parent="EU1QH4aLxlhtoEJ4A5pZ-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="NEE" vertex="1">
+          <mxGeometry relative="1" x="-0.4918" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rr_py" parent="rr_outer" style="swimlane;html=1;startSize=30;horizontal=0;fontSize=11;fontStyle=1;fillColor=#f5f0ff;strokeColor=#7b5ea7;" value="Python Geautomatiseerde XML-analyse" vertex="1">
+          <mxGeometry height="230" width="1720" x="30" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_p1" parent="rr_py" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#ede7f6;strokeColor=#7b5ea7;fontSize=10;align=left;spacingLeft=6;fontStyle=0;" value="Claude_IT2_rechtoeRechtaan.py Doel: identificeer relevante XML-bestanden ▸ Scan alle pand-XML&#39;s (~50 GB) ▸ Filter op bronhouderscode (&#39;NNNN&#39;) ▸filter alle panden met &#39;Bouw gestart&#39; in 2025▸&amp;nbsp;Schrijf lijst met XML waarin GEMEENTE-panden voorkomen naar CSV ▸ Looptijd: ~15 min" vertex="1">
+          <mxGeometry height="140" width="200" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_p1out" parent="rr_py" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" value="GEMEENTE_panden_BG_id_2025.csv&amp;nbsp;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;text-align: left; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&#39;aantal&#39;&lt;/span&gt;-panden&lt;/div&gt;" vertex="1">
+          <mxGeometry height="55" width="200" x="470" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_p2out" parent="rr_py" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" value="GEMEENTE_panden_BG_id_2025.shp&amp;nbsp;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;text-align: left; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&#39;aantal&#39;&lt;/span&gt;-panden&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="220" x="470" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_ep1p1o" edge="1" parent="rr_py" source="rr_p1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="rr_p2out" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1-PWimUSapnKKDK9stBq-1" edge="1" parent="rr_py" source="rr_p1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="rr_p1out">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LMX5DbepPwT_fBcXepHj-1" parent="rr_py" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1a2535;strokeColor=#1a2535;fontColor=#ffffff;fontStyle=1;fontSize=11;" value="TO DO: welke VBO&lt;div&gt;zijn &#39;betaalbaar&#39;?&lt;div&gt;vuistregel: vbo tot 75m² betaalbaar?&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="210" x="1490" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="rr_cross_b4q1" edge="1" parent="rr_outer" source="rr_b4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" target="rr_q1" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="315" y="195" />
+              <mxPoint x="230" y="195" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1-PWimUSapnKKDK9stBq-2" edge="1" parent="rr_outer" source="rr_p2out" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" target="rr_q3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="588" y="500" />
+            </Array>
+            <mxPoint x="520" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LMX5DbepPwT_fBcXepHj-2" edge="1" parent="rr_outer" source="rr_end" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="LMX5DbepPwT_fBcXepHj-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Methode 2 – Opgetopte Woningen" id="j5r7Ddw0VPw2uG9Vh7O8">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1900" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ow_outer" parent="1" style="swimlane;html=1;horizontal=0;startSize=30;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontStyle=1;fontSize=13;" value="Methode 2 – Opgetopte Woningen &amp; Transformatie (VBO gevormd in bestaand pand)" vertex="1">
+          <mxGeometry height="1000" width="1760" x="20" y="159" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_bag" parent="ow_outer" style="swimlane;html=1;startSize=30;horizontal=0;fontSize=11;fontStyle=1;fillColor=#e8f4fd;strokeColor=#6c8ebf;" value="BAG Databron" vertex="1">
+          <mxGeometry height="135" width="1730" x="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_b1" parent="ow_bag" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;fontStyle=0;" value="⬇  Download BAG XML lvbag-extract-nl.zip ~3.3 GB" vertex="1">
+          <mxGeometry height="100" width="140" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_b2" parent="ow_bag" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" value="BAG VBO-XML bestanden lokaal opgeslagen ~50 GB uitgepakt" vertex="1">
+          <mxGeometry height="90" width="150" x="210" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_eb1b2" edge="1" parent="ow_bag" source="ow_b1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" target="ow_b2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_notebron" parent="ow_bag" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=6;" value="Let op: de actuele geopackage bevat GEEN statushistorie. Voor transformatie en optopping is de historische BAG XML de enige betrouwbare bron. Geopackage is hier onvoldoende." vertex="1">
+          <mxGeometry height="90" width="400" x="390" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="Yix-t08Fb5z6l6pR35lu-3" parent="ow_bag" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Thomas van Offeren&lt;div&gt;gemeente Haarlemmermeer&lt;/div&gt;&lt;div&gt;maart 2026&lt;/div&gt;&lt;div&gt;(met hulp van Claude AI)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="170" x="1550" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WeAsWRmMji9oMXfj7BuE-1" parent="ow_bag" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;fontStyle=0;" value="⬇  Download BAG Geopackage bag-light.gpkg Actuele stand" vertex="1">
+          <mxGeometry height="75" width="150" x="810" y="22.5" as="geometry" />
+        </mxCell>
+        <mxCell id="WeAsWRmMji9oMXfj7BuE-2" parent="ow_bag" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" value="bag-light.gpkg lokaal opgeslagen&lt;div&gt;--Panden&lt;/div&gt;" vertex="1">
+          <mxGeometry height="72" width="130" x="1030" y="24" as="geometry" />
+        </mxCell>
+        <mxCell id="WeAsWRmMji9oMXfj7BuE-3" edge="1" parent="ow_bag" source="WeAsWRmMji9oMXfj7BuE-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" target="WeAsWRmMji9oMXfj7BuE-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_py" parent="ow_outer" style="swimlane;html=1;startSize=30;horizontal=0;fontSize=11;fontStyle=1;fillColor=#f5f0ff;strokeColor=#7b5ea7;" value="Python XML-analyse" vertex="1">
+          <mxGeometry height="520" width="1730" x="30" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_p0" parent="ow_py" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;fillColor=#ede7f6;strokeColor=#7b5ea7;fontSize=10;align=left;spacingLeft=6;fontStyle=0;" value="Scan alle VBO-XML&#39;s op bronhouderscode ▸ Schrijf lijst relevante bestanden naar CSV ▸ Looptijd: ~55 min" vertex="1">
+          <mxGeometry height="100" width="210" x="65" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_p0out" parent="ow_py" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" value="GEMEENTE_VBO_VG_id_2025.csv (~24 XML-bestanden)" vertex="1">
+          <mxGeometry height="80" width="160" x="90" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_ep0p0o" edge="1" parent="ow_py" source="ow_p0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" target="ow_p0out" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_pA" parent="ow_py" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#ffffff;strokeColor=#3a6fa0;fontSize=10;align=left;spacingLeft=6;" value="Stap A – Laad alle VBO ▸ Bronhouderscode = &#39;NNNN&#39; ▸ Status = &#39;Verblijfsobject gevormd&#39; ▸ Gebruiksdoel bevat &#39;woonfunctie&#39; ▸ Bewaar ALLE historische voorkomens   (ook vóór 2025)" vertex="1">
+          <mxGeometry height="160" width="190" x="295" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_pB" parent="ow_py" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#ffffff;strokeColor=#3a6fa0;fontSize=10;align=left;spacingLeft=6;" value="Stap B – Opschonen ▸ Zoek VBO-identificaties met   status &#39;ten onrechte opgevoerd&#39; ▸ Verwijder ALLE voorkomens   van die identificaties (administratieve fouten, geen echte woningen)" vertex="1">
+          <mxGeometry height="160" width="190" x="550" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_pC" parent="ow_py" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#ffffff;strokeColor=#3a6fa0;fontSize=10;align=left;spacingLeft=6;" value="Stap C – Dedupliceren Per VBO-identificatie: bewaar voorkomen met HOOGSTE voorkomenId (meest recente geldige stand)  → Één rij per uniek VBO" vertex="1">
+          <mxGeometry height="160" width="190" x="800" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_pD" parent="ow_py" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#ffffff;strokeColor=#3a6fa0;fontSize=10;align=left;spacingLeft=6;" value="Stap D – Koppel pandstatus ▸ Via&amp;nbsp; PandRef ▸ Join op bag-light -- Panden-gpkg:   pandstatus, bouwjaar,   voorkomenId pand  → Elke VBO gevormd in 2025 krijgt zijn (actuele, per datum download BAG gpkg) pandstatus als attribuut&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;opslaan als:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-align: center;&quot;&gt;GEMEENTE&lt;/span&gt;_OW_VBOPND_2025.SHP&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="190" x="1050" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_pE" parent="ow_py" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#ffffff;strokeColor=#3a6fa0;fontSize=10;align=left;spacingLeft=6;" value="Stap E – Categoriseer op pandstatus Split resultaat in 4 groepen:   ① &#39;Bouw gestart&#39; → al in Methode 1   ② &#39;Pand in gebruik&#39; → transformatie      of optopping → verificatie   ③ &#39;Verbouwing pand&#39; → onderzoek   ④ &#39;Bouwvergunning verleend&#39;      → bouw nog NIET gestart, uitsluiten" vertex="1">
+          <mxGeometry height="160" width="240" x="1300" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_epApB" edge="1" parent="ow_py" source="ow_pA" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" target="ow_pB" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_epBpC" edge="1" parent="ow_py" source="ow_pB" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" target="ow_pC" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_epCpD" edge="1" parent="ow_py" source="ow_pC" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" target="ow_pD" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_epDpE" edge="1" parent="ow_py" source="ow_pD" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" target="ow_pE" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_out1" parent="ow_py" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;align=left;spacingLeft=4;" value="&lt;div&gt;categorie 2:&lt;/div&gt;&#39;aantal&#39; VBO Pand in Gebruik&amp;nbsp;&lt;div&gt;&#39;aantal&#39; VBO Pand in Gebruijk (niet ingemeten)&lt;/div&gt;&lt;div&gt;&amp;nbsp;→ naar QGIS verificatie&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="190" x="470" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_out2" parent="ow_py" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;align=left;spacingLeft=4;" value="&lt;div&gt;categorie 3:&lt;/div&gt;&#39;aantal&#39; VBO Verbouwing Pand&amp;nbsp; → naar QGIS verificatie" vertex="1">
+          <mxGeometry height="110" width="190" x="690" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_out3" parent="ow_py" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;align=center;" value="&lt;div&gt;categorie 4:&lt;/div&gt;&#39;aantal&#39; VBO:&amp;nbsp; Bouwvergunning verleend ✗ Uitgesloten voor 2025" vertex="1">
+          <mxGeometry height="110" width="190" x="910" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_out4" parent="ow_py" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=6;" value="&lt;div&gt;categorie 1:&lt;/div&gt;&lt;div&gt;&#39;aantal&#39; VBO:&lt;/div&gt;Bouw gestart-categorie → al verwerkt in Methode 1 (RR) ✓ Geen dubbeltelling" vertex="1">
+          <mxGeometry height="110" width="190" x="1140" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_epEout1" edge="1" parent="ow_py" source="ow_pE" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" target="ow_out1" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1480" y="270" />
+              <mxPoint x="565" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ow_epEout2" edge="1" parent="ow_py" source="ow_pE" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" target="ow_out2" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1480" y="290" />
+              <mxPoint x="785" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ow_epEout3" edge="1" parent="ow_py" source="ow_pE" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" target="ow_out3" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1480" y="310" />
+              <mxPoint x="1005" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ow_epEout4" edge="1" parent="ow_py" source="ow_pE" style="edgeStyle=orthogonalEdgeStyle;rounded=0;dashed=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;endArrow=open;endFill=0;" target="ow_out4" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1480" y="395" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gCzBQt83Wm5SUtUViRY5-1" edge="1" parent="ow_py" source="ow_p0out" style="edgeStyle=none;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="ow_pA">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="390" y="240" />
+            </Array>
+            <mxPoint x="290" y="201" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ow_qgis" parent="ow_outer" style="swimlane;html=1;startSize=30;horizontal=0;fontSize=11;fontStyle=1;fillColor=#f0f9f0;strokeColor=#82b366;" value="QGIS Verificatie &amp; categorisatie" vertex="1">
+          <mxGeometry height="350" width="1730" x="30" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_q1" parent="ow_qgis" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#ffffff;strokeColor=#3a6fa0;fontSize=10;align=left;spacingLeft=6;" value="Stap 1 –&amp;nbsp;&lt;div&gt;opslaan als: GEMEENTE_OW_VBOPND_2025_RvR.shp&lt;/div&gt;&lt;div&gt;(Relevant voor Realisatiestimulans)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Laad&amp;nbsp;&lt;span style=&quot;text-align: center;&quot;&gt;GEMEENTE&lt;/span&gt;_OW_VBOPND_2025.shp&amp;nbsp; Laad ook&amp;nbsp;&lt;span style=&quot;text-align: center;&quot;&gt;GEMEENTE_&lt;/span&gt;RR_VBO_2025.shp (Methode 1) voor overlap-controle.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="220" x="40" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WeAsWRmMji9oMXfj7BuE-7" edge="1" parent="ow_qgis" source="ow_q2" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="ow_q4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_q2" parent="ow_qgis" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#ffffff;strokeColor=#3a6fa0;fontSize=10;align=left;spacingLeft=6;" value="&lt;div&gt;werk in bestand: GEMEENTE_OW_VBOPND_2025_RvR.shp&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Maak attribuutkolom &#39;ONDERZOEK&#39; waarin je onderzoeksbevindingen noteert.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;Stap 2 – onderzoek de verschillende vbo&#39;s met Pand status.&amp;nbsp;&lt;div&gt;Met name &#39;verbouwing&#39; is interessant.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="260" x="350" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_q4" parent="ow_qgis" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#ffffff;strokeColor=#3a6fa0;fontSize=10;align=left;spacingLeft=6;" value="&lt;div&gt;Maak attribuutkolom &quot;Relevant voor Realisatie&quot;. 1 = ja, 0 = nee.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;Stap 3 – Handmatige verificatie ▸ Cyclorama&#39;s (Cyclomedia) raadplegen ▸ Luchtfoto&#39;s vergelijken (2024 vs 2025) ▸ Omgevingsvergunning controleren ▸ documentdatum &amp;lt; 2025-01-01   → markeer &#39;voor 2025 begonnen&#39; Was feitelijke verbouw in 2025 gestart?" vertex="1">
+          <mxGeometry height="150" width="250" x="740" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_q5" parent="ow_qgis" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;fontStyle=0;align=center;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;Relevant voor Realisatie&lt;div&gt;Ja = 1&lt;/div&gt;&lt;div&gt;Nee = 0&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="130" x="1020" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_qok" parent="ow_qgis" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;align=center;" value="✓ Relevant voor Realisatiestimulans Opnemen in telling" vertex="1">
+          <mxGeometry height="110" width="190" x="1220" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_qnok" parent="ow_qgis" style="rounded=1;whiteSpace=wrap;html=1;arcSize=10;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;align=center;" value="✗ Niet relevant: • Te vroeg begonnen • Omissie BAG-status • Legalisatie bestaand gebruik" vertex="1">
+          <mxGeometry height="120" width="190" x="990" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_qout" parent="ow_qgis" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;align=left;spacingLeft=4;" value="Filter op &#39;relevant voor realisatie&#39; == 1.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;opslaan als: DEFINITIEF_GEMEENTE_OW_VBOPND_2025.shp&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="260" x="1450" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_eq1q2" edge="1" parent="ow_qgis" source="ow_q1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" target="ow_q2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_eq4q5" edge="1" parent="ow_qgis" source="ow_q4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" target="ow_q5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_eq5ok" edge="1" parent="ow_qgis" source="ow_q5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1220" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ow_ljao" connectable="0" parent="ow_eq5ok" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="JA" vertex="1">
+          <mxGeometry relative="1" x="0.3" y="-5" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ow_eq5nok" edge="1" parent="ow_qgis" source="ow_q5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" target="ow_qnok" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_lneoo" connectable="0" parent="ow_eq5nok" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="NEE" vertex="1">
+          <mxGeometry relative="1" x="0.3" y="5" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ow_eqokout" edge="1" parent="ow_qgis" source="ow_qok" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" target="ow_qout" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_splitnote" parent="ow_qgis" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=6;" value="📌 Splitsing-casus 1× VBO &#39;in gebruik&#39; (woonfunctie, bijv. 150m²) → 3× VBO &#39;gevormd&#39; (bijv. 50+50+50 m²) Netto: +2 nieuwe woningen. Controleer: som oppervlaktes ≈ origineel. Potentieel: 1× onbetaalbaar → 3× betaalbaar.&amp;nbsp;&lt;div&gt;Weliswaar komen er netto 2 woningen bij, het telt als 3 toevoegingen van &#39;betaalbare woningen&#39; aan het woningbestand.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="300" x="40" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_legalnote" parent="ow_qgis" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=6;" value="📌 Legalisatie-casus VBO woonfunctie jarenlang (illegaal) aanwezig, nu (2025) gelegaliseerd/vergund via omgevingsvergunning. Telt dit als &#39;start bouwwerkzaamheden&#39; of toevoeging van een betaalbare woning? Ik denk het niet. Zorg dat de BAG Beheerder goed &#39;begin datum geldigheid&#39; invult met als datum in het&amp;nbsp; (verre) verleden toen het VBO werd gevormd. Met een documentdatum in 2025.&lt;div&gt;Geen probleem voor ENSIA. Die kijkt naar documentdatum voor de verwerkingstermijn van 4 werkdagen in LV BAG.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="280" x="350" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Yix-t08Fb5z6l6pR35lu-2" edge="1" parent="ow_qgis" source="ow_fin" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="Yix-t08Fb5z6l6pR35lu-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_fin" parent="ow_qgis" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;" value="Eindscore RR + OW = potentieel totaal betaalbare VBO 2025" vertex="1">
+          <mxGeometry height="80" width="170" x="1540" y="175" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_cross_qoutfin" edge="1" parent="ow_qgis" source="ow_qout" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;" target="ow_fin" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1670" y="90" />
+              <mxPoint x="1670" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Yix-t08Fb5z6l6pR35lu-1" parent="ow_qgis" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1a2535;strokeColor=#1a2535;fontColor=#ffffff;fontStyle=1;fontSize=11;" value="TO DO: welke VBO uit Eindscore zijn betaalbaar&#39;?&lt;div&gt;vuistregel: vbo tot 75m² betaalbaar?&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="230" x="1360" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="ow_cross_b2p0" edge="1" parent="ow_outer" source="ow_b2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ow_p0" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="315" y="140" />
+              <mxPoint x="200" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ow_cross_out1q1" edge="1" parent="ow_outer" source="ow_out2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;exitX=0.283;exitY=1.017;exitDx=0;exitDy=0;exitPerimeter=0;" target="ow_q1" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="774" y="640" />
+              <mxPoint x="200" y="640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ow_cross_out2q1" edge="1" parent="ow_outer" source="ow_out1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;exitX=0.37;exitY=0.985;exitDx=0;exitDy=0;exitPerimeter=0;" target="ow_q1" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="615" />
+              <mxPoint x="180" y="615" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4WwF4R_LA7sdSKRJdJc6-1" edge="1" parent="ow_outer" source="WeAsWRmMji9oMXfj7BuE-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="ow_pD">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4WwF4R_LA7sdSKRJdJc6-2" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Methode 2: Opgetopte Woningen&lt;/h1&gt;&lt;p&gt;Dit stroomschema berekent het aantal verblijfsobjecten met woonfunctie in bestaande panden. Vandaar &#39;opgetopte woningen&#39;. Het&amp;nbsp; kunnen ook transformaties zijn van bijvoorbeeld kantoorfunctie naar woonfunctie.&lt;/p&gt;&lt;p&gt;Omdat bij een verblijfsobject geen melding &#39;Bouw gestart&#39; komt, is in deze berekening gekozen voor het moment van &#39;Verblijfsobject gevormd&#39;. In de BAG is het alternatief: &#39;Verblijfsobject in gebruik (niet ingemeten)&#39;.&amp;nbsp;&lt;/p&gt;&lt;p&gt;Kijkend naar de praktijk waarin de (ver)bouw van het verblijfsobject al gestart kan zijn voordat de vergunning is verleend, lijkt me de status &#39;verblijfsobject gevormd&#39; dichterbij de werkelijkheid te zijn dan de status &#39;verblijfsobject in gebruik (niet ingemeten)&#39;.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="130" width="1360" x="30" y="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
