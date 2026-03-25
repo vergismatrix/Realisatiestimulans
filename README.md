@@ -2,7 +2,23 @@
 Voor en door gemeenten. Een twee scripts om uit BAG-data de basis te leggen voor de Realisatiestimulans.
 
 # Citeertitel (APA)
-Offeren, TA. (2026, maart), _Vergismatrix/Realisatiestimulans_ . GitHub. Https://github.com/vergismatrix/Realisatiestimulans/
+Offeren, TA van. (2026, maart), _Vergismatrix/Realisatiestimulans_ . GitHub. Https://github.com/vergismatrix/Realisatiestimulans/
+
+# License
+GNU General Public License v3.0
+
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+Permissions: Commercial use, Modification, Distribution, Patent use, Private use.
+Limitations: Liability, Warranty.
+Conditions: License and copyright notice, State changes, Disclose source, Same license.
+
+Het komt erop neer: je kunt deze code ook voor commercieel gebruik hergebruiken om derden te ondersteunen in de subsidieregeling Realisatiestimulans. Maar als je aanpassingen doet aan de pythonscripts of draw-io XML stroomschema, dan verwacht ik ook dat je een pull request doet aan de main-branch.
+Ik ben niet aansprakelijk voor fouten die voortkomen uit de scripts. 
+Ik geef geen garantie dat de scripts beschikbaar blijven en geef geen garanties over de werking of resultaten van de scripts.
+
+Bij hergebruik van de scripts moet je derden wijzen op deze licentie en je moet de bron vermelden: Offeren, TA van. (2026, maart), _Vergismatrix/Realisatiestimulans_ . GitHub. Https://github.com/vergismatrix/Realisatiestimulans/ (zie citeertitel).
 
 
 [BLANK_README.md](https://github.com/user-attachments/files/25930483/BLANK_README.md)
