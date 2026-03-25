@@ -1,5 +1,10 @@
 # Realisatiestimulans
 Voor en door gemeenten. Een twee scripts om uit BAG-data de basis te leggen voor de Realisatiestimulans.
+
+# Citeertitel (APA)
+Offeren, TA. (2026, maart), _Vergismatrix/Realisatiestimulans_ . GitHub. Https://github.com/vergismatrix/Realisatiestimulans/
+
+
 [BLANK_README.md](https://github.com/user-attachments/files/25930483/BLANK_README.md)
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
